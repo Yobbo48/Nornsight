@@ -1,0 +1,206 @@
+{
+  "datasetName": "nornsight_core_12",
+  "description": "12 cas de test Nornsight pour relire le moteur runique, la clarté du gratuit, la valeur du payant et la fidélité au tirage.",
+  "manualScoreKeys": [
+    "free_clarity",
+    "paid_value",
+    "rune_fidelity",
+    "tone_accuracy",
+    "repetition",
+    "would_send_to_customer"
+  ],
+  "cases": [
+    {
+      "id": "porteur_01",
+      "theme": "pro",
+      "question": "Est-ce que Nornsight peut devenir une vraie source de revenus pour moi dans les mois à venir ?",
+      "runes": ["Fehu", "Gebo", "Sowilo"],
+      "expectedTone": "porteur",
+      "notes": "Tirage favorable avec réserve légère seulement.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "porteur_02",
+      "theme": "argent",
+      "question": "Vais-je retrouver plus de souffle financier d'ici l'été ?",
+      "runes": ["Fehu", "Raidho", "Jera"],
+      "expectedTone": "ouvert_mais_retenu",
+      "notes": "Progression réelle avec temporalité à respecter.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "ouvert_01",
+      "theme": "situation",
+      "question": "Est-ce que mon déménagement va vraiment se concrétiser cette année ?",
+      "runes": ["Othala", "Raidho", "Jera"],
+      "expectedTone": "ouvert_mais_retenu",
+      "notes": "Projet concret avec inertie, organisation et délai.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "ouvert_02",
+      "theme": "relations",
+      "question": "Est-ce que notre lien peut repartir sur de meilleures bases ?",
+      "runes": ["Gebo", "Mannaz", "Berkano"],
+      "expectedTone": "en_reajustement",
+      "notes": "Lien non fermé, mais besoin de repositionnement clair.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "mitige_01",
+      "theme": "pro",
+      "question": "Est-ce que mes projets actuels vont vraiment décoller cette année ?",
+      "runes": ["Berkano", "Laguz", "Dagaz"],
+      "expectedTone": "mitige",
+      "notes": "Potentiel réel mais encore flou et inégal.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "mitige_02",
+      "theme": "argent",
+      "question": "Vais-je pouvoir acheter un nouvel ordinateur cette année ?",
+      "runes": ["Kenaz", "Perthro", "Fehu"],
+      "expectedTone": "en_clarification",
+      "notes": "Ouverture partielle avec pièce manquante et marge à lire finement.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "tendu_01",
+      "theme": "argent",
+      "question": "Vais-je retomber à flot financièrement en juin ?",
+      "runes": ["Nauthiz", "Isa", "Jera"],
+      "expectedTone": "tendu",
+      "notes": "Forte contrainte présente, petite ouverture seulement différée.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "tendu_02",
+      "theme": "relations",
+      "question": "Est-ce que cette relation peut vraiment devenir stable ?",
+      "runes": ["Wunjo", "Nauthiz", "Laguz"],
+      "expectedTone": "tendu",
+      "notes": "Aspiration positive mais présent serré et futur flou.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "ferme_01",
+      "theme": "situation",
+      "question": "Est-ce que ce dossier va se débloquer rapidement ?",
+      "runes": ["Othala", "Thurisaz", "Isa"],
+      "expectedTone": "ferme_a_court_terme",
+      "notes": "Cadre figé et obstacle présent, peu d'ouverture immédiate.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "ferme_02",
+      "theme": "pro",
+      "question": "Est-ce que ce projet peut devenir rentable sans gros changement ?",
+      "runes": ["Fehu", "Hagalaz", "Othala"],
+      "expectedTone": "ferme_a_court_terme",
+      "notes": "Bonne base mais présent cassant et futur maintenu.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "factuelle_01",
+      "theme": "autre",
+      "question": "Est-ce que Michael Jackson est mort ?",
+      "runes": ["Ansuz", "Perthro", "Isa"],
+      "expectedTone": "reframe",
+      "notes": "Question factuelle brute, doit être recadrée.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    },
+    {
+      "id": "sensible_01",
+      "theme": "autre",
+      "question": "Est-ce que ma santé va s'aggraver rapidement ?",
+      "runes": ["Nauthiz", "Laguz", "Perthro"],
+      "expectedTone": "soften",
+      "notes": "Question sensible, doit rester prudente et ne pas singer un diagnostic.",
+      "manualScores": {
+        "free_clarity": null,
+        "paid_value": null,
+        "rune_fidelity": null,
+        "tone_accuracy": null,
+        "repetition": null,
+        "would_send_to_customer": null
+      }
+    }
+  ]
+}
