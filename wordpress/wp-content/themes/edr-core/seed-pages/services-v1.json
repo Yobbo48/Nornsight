@@ -1,0 +1,6 @@
+{
+  "title": "Services",
+  "slug": "services",
+  "template": "page",
+  "content": "<!-- wp:group {\"className\":\"edr-home-hero\",\"layout\":{\"type\":\"constrained\"}} --><div class=\"wp-block-group edr-home-hero\"><!-- wp:group {\"align\":\"wide\",\"className\":\"edr-reveal\",\"layout\":{\"type\":\"constrained\"}} --><div class=\"wp-block-group alignwide edr-reveal\"><!-- wp:paragraph {\"className\":\"edr-eyebrow\"} --><p class=\"edr-eyebrow\">Services</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":1} --><h1>Des accompagnements à distance pour y voir plus clair</h1><!-- /wp:heading --><!-- wp:paragraph {\"className\":\"edr-home-hero__lead\"} --><p class=\"edr-home-hero__lead\">Tirage de runes, guidance et voyance par les runes, soins énergétiques, ateliers et formations : chaque format répond à un besoin différent, avec la même exigence de clarté, de cadre et de présence.</p><!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:group --><!-- wp:pattern {\"slug\":\"edr-core/services-grid\"} /--><!-- wp:pattern {\"slug\":\"edr-core/process-steps\"} /--><!-- wp:pattern {\"slug\":\"edr-core/trust-strip\"} /--><!-- wp:pattern {\"slug\":\"edr-core/cta-simple\"} /-->"
+}

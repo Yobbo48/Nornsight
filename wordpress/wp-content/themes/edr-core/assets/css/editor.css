@@ -1,0 +1,44 @@
+.editor-styles-wrapper {
+  background: #faf9f7;
+  color: #3a3530;
+  font-family: "Lora", serif;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4 {
+  font-family: "Cinzel", serif;
+  color: #1f1a17;
+}
+
+.editor-styles-wrapper .edr-site-header-shell,
+.editor-styles-wrapper .edr-site-footer {
+  pointer-events: none;
+}
+
+.editor-styles-wrapper .edr-home-hero,
+.editor-styles-wrapper .edr-book-banner,
+.editor-styles-wrapper .edr-about-panel,
+.editor-styles-wrapper .edr-newsletter-block,
+.editor-styles-wrapper .edr-calendly-block,
+.editor-styles-wrapper .edr-faq-block,
+.editor-styles-wrapper .edr-cta-panel,
+.editor-styles-wrapper .edr-process-steps,
+.editor-styles-wrapper .edr-trust-strip,
+.editor-styles-wrapper .edr-card-service,
+.editor-styles-wrapper .edr-card-training,
+.editor-styles-wrapper .edr-testimonial {
+  border-radius: 24px;
+  border: 1px solid rgba(115, 92, 70, 0.12);
+  box-shadow: 0 16px 40px rgba(60, 45, 30, 0.08);
+}
+
+.editor-styles-wrapper .edr-home-hero {
+  padding-top: 4rem;
+}
+
+.editor-styles-wrapper .edr-reveal {
+  opacity: 1;
+  transform: none;
+}

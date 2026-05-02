@@ -1,0 +1,94 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "palette": [
+        { "slug": "base", "name": "Base", "color": "#faf9f7" },
+        { "slug": "soft", "name": "Soft", "color": "#f3f0eb" },
+        { "slug": "night", "name": "Night", "color": "#1c1f2e" },
+        { "slug": "night-2", "name": "Night 2", "color": "#252a3a" },
+        { "slug": "copper", "name": "Copper", "color": "#b8864e" },
+        { "slug": "text", "name": "Text", "color": "#3a3530" },
+        { "slug": "text-soft", "name": "Text Soft", "color": "#6b6158" },
+        { "slug": "border", "name": "Border", "color": "#e5dfd6" }
+      ]
+    },
+    "layout": {
+      "contentSize": "760px",
+      "wideSize": "1280px"
+    },
+    "spacing": {
+      "spacingSizes": [
+        { "slug": "xs", "name": "XS", "size": "8px" },
+        { "slug": "s", "name": "S", "size": "16px" },
+        { "slug": "m", "name": "M", "size": "24px" },
+        { "slug": "l", "name": "L", "size": "40px" },
+        { "slug": "xl", "name": "XL", "size": "64px" },
+        { "slug": "xxl", "name": "XXL", "size": "96px" }
+      ],
+      "units": [ "px", "rem", "%" ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontSizes": [
+        { "slug": "body", "size": "1rem", "name": "Body" },
+        { "slug": "lead", "size": "1.125rem", "name": "Lead" },
+        { "slug": "display", "size": "clamp(3rem, 6vw, 6rem)", "name": "Display" }
+      ],
+      "fontFamilies": [
+        {
+          "fontFamily": "\"Cinzel\", serif",
+          "name": "Cinzel",
+          "slug": "cinzel"
+        },
+        {
+          "fontFamily": "\"Lora\", serif",
+          "name": "Lora",
+          "slug": "lora"
+        },
+        {
+          "fontFamily": "system-ui, sans-serif",
+          "name": "System UI",
+          "slug": "system-ui"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#faf9f7",
+      "text": "#3a3530"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--lora)",
+      "lineHeight": "1.7"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--cinzel)"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "#7c5a34"
+        }
+      },
+      "button": {
+        "border": {
+          "radius": "999px"
+        },
+        "color": {
+          "background": "#b8864e",
+          "text": "#ffffff"
+        },
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--system-ui)",
+          "fontWeight": "700"
+        }
+      }
+    }
+  }
+}

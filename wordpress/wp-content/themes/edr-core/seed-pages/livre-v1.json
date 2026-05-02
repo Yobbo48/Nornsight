@@ -1,0 +1,6 @@
+{
+  "title": "Le Livre",
+  "slug": "le-petit-guide-des-runes",
+  "template": "page",
+  "content": "<!-- wp:group {\"className\":\"edr-home-hero\",\"layout\":{\"type\":\"constrained\"}} --><div class=\"wp-block-group edr-home-hero\"><!-- wp:group {\"align\":\"wide\",\"className\":\"edr-reveal\",\"layout\":{\"type\":\"constrained\"}} --><div class=\"wp-block-group alignwide edr-reveal\"><!-- wp:paragraph {\"className\":\"edr-eyebrow\"} --><p class=\"edr-eyebrow\">Le Livre</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":1} --><h1>Le Petit Guide des Runes</h1><!-- /wp:heading --><!-- wp:paragraph {\"className\":\"edr-home-hero__lead\"} --><p class=\"edr-home-hero__lead\">Fruit de plus de 10 ans de pratique, ce guide présente les 24 runes du Futhark ancien — leurs symboles, leurs énergies et leurs utilisations en tirage. Accessible aux débutants, précieux pour les pratiquants.</p><!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:group --><!-- wp:pattern {\"slug\":\"edr-core/book-banner\"} /--><!-- wp:pattern {\"slug\":\"edr-core/cta-simple\"} /-->"
+}

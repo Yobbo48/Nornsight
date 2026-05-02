@@ -1,0 +1,6 @@
+{
+  "title": "À propos",
+  "slug": "a-propos",
+  "template": "page",
+  "content": "<!-- wp:group {\"className\":\"edr-home-hero\",\"layout\":{\"type\":\"constrained\"}} --><div class=\"wp-block-group edr-home-hero\"><!-- wp:group {\"align\":\"wide\",\"className\":\"edr-reveal\",\"layout\":{\"type\":\"constrained\"}} --><div class=\"wp-block-group alignwide edr-reveal\"><!-- wp:paragraph {\"className\":\"edr-eyebrow\"} --><p class=\"edr-eyebrow\">À propos</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":1} --><h1>Un parcours de reconversion guidé par les runes depuis 2015</h1><!-- /wp:heading --><!-- wp:paragraph {\"className\":\"edr-home-hero__lead\"} --><p class=\"edr-home-hero__lead\">Issu du monde du commerce et de l’informatique, Kévin Legros a trouvé dans les runes nordiques un axe de lecture, de pratique et de transmission. Depuis, il développe un accompagnement direct, bienveillant et accessible, entièrement à distance.</p><!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:group --><!-- wp:pattern {\"slug\":\"edr-core/about-condensed\"} /--><!-- wp:pattern {\"slug\":\"edr-core/cta-simple\"} /-->"
+}

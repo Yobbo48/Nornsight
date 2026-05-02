@@ -1,0 +1,13 @@
+.is-soft {
+  background: #f3f0eb;
+}
+
+.is-dark {
+  background: #1c1f2e;
+  color: #faf9f7;
+}
+
+.is-narrow {
+  max-width: 760px;
+  margin-inline: auto;
+}

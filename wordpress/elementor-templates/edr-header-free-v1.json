@@ -1,0 +1,140 @@
+{
+  "version": "0.4",
+  "title": "EDR Header Free v1",
+  "type": "section",
+  "content": [
+    {
+      "id": "edrhdr01",
+      "elType": "section",
+      "isInner": false,
+      "settings": {
+        "_css_classes": "edr-el-header edr-el-header-shell",
+        "content_width": "boxed",
+        "boxed_width": {
+          "unit": "px",
+          "size": 1240,
+          "sizes": []
+        },
+        "gap": "extended",
+        "padding": {
+          "unit": "px",
+          "top": "0",
+          "right": "0",
+          "bottom": "0",
+          "left": "0",
+          "isLinked": false
+        }
+      },
+      "elements": [
+        {
+          "id": "edrcol01",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 28,
+            "_inline_size": 28,
+            "_css_classes": "edr-el-header-bar edr-el-branding"
+          },
+          "elements": [
+            {
+              "id": "edrwdg01",
+              "elType": "widget",
+              "widgetType": "heading",
+              "settings": {
+                "title": "L\u2019ENERGIE DES RUNES",
+                "size": "xl",
+                "align": "left"
+              },
+              "elements": []
+            },
+            {
+              "id": "edrwdg02",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<p>Guidances et transmission a distance</p>",
+                "align": "left"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "edrcol02",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 42,
+            "_inline_size": 42,
+            "_css_classes": "edr-el-header-bar edr-el-nav-pill"
+          },
+          "elements": [
+            {
+              "id": "edrwdg03",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "editor": "<div class=\"edr-el-nav-links\"><a href=\"/\">Accueil</a><a href=\"/services/\">Services</a><a href=\"/formations/\">Formations</a><a href=\"/le-petit-guide-des-runes/\">Le Livre</a><a href=\"/a-propos/\">A propos</a><a href=\"/reserver/\">Reserver</a></div>",
+                "align": "center"
+              },
+              "elements": []
+            }
+          ]
+        },
+        {
+          "id": "edrcol03",
+          "elType": "column",
+          "isInner": false,
+          "settings": {
+            "_column_size": 30,
+            "_inline_size": 30,
+            "_css_classes": "edr-el-header-bar edr-el-meta"
+          },
+          "elements": [
+            {
+              "id": "edrwdg04",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_css_classes": "edr-el-meta-top",
+                "editor": "<p>Accessible partout en France</p>",
+                "align": "right"
+              },
+              "elements": []
+            },
+            {
+              "id": "edrwdg05",
+              "elType": "widget",
+              "widgetType": "text-editor",
+              "settings": {
+                "_css_classes": "edr-el-meta-bottom",
+                "editor": "<p>Telephone \u00b7 Visioconference \u00b7 Email</p>",
+                "align": "right"
+              },
+              "elements": []
+            },
+            {
+              "id": "edrwdg06",
+              "elType": "widget",
+              "widgetType": "button",
+              "settings": {
+                "_css_classes": "edr-el-cta",
+                "text": "Reserver une seance",
+                "align": "right",
+                "link": {
+                  "url": "https://calendly.com/",
+                  "is_external": "on",
+                  "nofollow": ""
+                },
+                "size": "md"
+              },
+              "elements": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "page_settings": [],
+  "status": "publish"
+}

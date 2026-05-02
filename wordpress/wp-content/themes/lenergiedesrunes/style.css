@@ -1,0 +1,497 @@
+/*
+Theme Name: Lenergie des Runes
+Theme URI: https://www.lenergiedesrunes.com
+Author: OpenAI Codex
+Description: Theme WordPress editorialisé et oriente conversion pour une activite de guidances et soins energetiques en ligne.
+Version: 0.2.0
+Requires at least: 6.5
+Tested up to: 6.8
+Requires PHP: 8.1
+Text Domain: lenergiedesrunes
+*/
+
+:root {
+  --bg: #faf8f4;
+  --bg-soft: #f2ede6;
+  --surface: #ffffff;
+  --surface-soft: #fffaf3;
+  --surface-dark: #1f2330;
+  --text: #342d27;
+  --text-soft: #6a6058;
+  --line: #e7ddd0;
+  --line-strong: rgba(95, 58, 29, 0.18);
+  --accent: #b8864e;
+  --accent-strong: #8f6031;
+  --accent-soft: #f6ecdf;
+  --forest: #2d4b46;
+  --shadow-sm: 0 10px 25px rgba(64, 43, 28, 0.08);
+  --shadow: 0 18px 48px rgba(64, 43, 28, 0.11);
+  --shadow-lg: 0 28px 70px rgba(38, 26, 18, 0.16);
+  --radius: 20px;
+  --radius-lg: 28px;
+  --content: 1180px;
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "DM Sans", Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(212, 164, 106, 0.22), transparent 26%),
+    radial-gradient(circle at top right, rgba(45, 75, 70, 0.08), transparent 24%),
+    linear-gradient(180deg, #fbfaf8 0%, #f7f2eb 100%);
+  font-family: var(--font-body);
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: var(--accent-strong);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.16em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.site-shell {
+  min-height: 100vh;
+}
+
+.container {
+  width: min(calc(100% - 2rem), var(--content));
+  margin: 0 auto;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(18px);
+  background: rgba(250, 247, 241, 0.88);
+  border-bottom: 1px solid var(--line);
+}
+
+.site-header__inner,
+.site-footer__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1rem 0;
+}
+
+.brand {
+  display: inline-flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: var(--text);
+}
+
+.brand__name {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.brand__tagline {
+  color: var(--text-soft);
+  font-size: 0.92rem;
+}
+
+.site-nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-nav a {
+  text-decoration: none;
+  color: var(--text);
+  font-size: 0.98rem;
+  font-weight: 500;
+}
+
+.button,
+button,
+input[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.8rem 1.25rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform 180ms ease, background 180ms ease, box-shadow 180ms ease;
+  font-family: var(--font-body);
+  font-weight: 600;
+}
+
+.button:hover,
+button:hover,
+input[type="submit"]:hover {
+  background: var(--accent-strong);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-lg);
+}
+
+.button--secondary {
+  background: transparent;
+  color: var(--accent-strong);
+  border-color: var(--line-strong);
+  box-shadow: none;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 5.75rem 0 3.25rem;
+}
+
+.hero__veil {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(circle at 82% 24%, rgba(184, 134, 78, 0.16), transparent 18%),
+    radial-gradient(circle at 10% 10%, rgba(45, 75, 70, 0.08), transparent 16%);
+}
+
+.hero__grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.eyebrow {
+  margin: 0 0 0.8rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.hero h1,
+.page-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(2.4rem, 5vw, 4.5rem);
+  line-height: 1.02;
+  font-family: var(--font-display);
+  letter-spacing: -0.02em;
+}
+
+.hero p,
+.page-hero p {
+  color: var(--text-soft);
+  font-size: 1.1rem;
+}
+
+.hero p {
+  max-width: 46rem;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 1.5rem;
+}
+
+.hero__trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.trust-pill {
+  padding: 0.62rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.72);
+  color: var(--text-soft);
+  font-size: 0.92rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.hero__card,
+.service-card,
+.testimonial,
+.article-card,
+.page-panel {
+  background: rgba(255, 255, 255, 0.84);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.hero__card {
+  position: relative;
+  padding: 1.8rem;
+  background: linear-gradient(180deg, rgba(255, 250, 243, 0.94), rgba(249, 242, 232, 0.94));
+}
+
+.hero__rune-mark {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  font-family: var(--font-display);
+  font-size: 4rem;
+  line-height: 1;
+  color: rgba(184, 134, 78, 0.16);
+}
+
+.hero__card-action {
+  margin-top: 1rem;
+}
+
+.book-strip {
+  padding: 0 0 2.75rem;
+}
+
+.book-strip__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  padding: 1.5rem 1.75rem;
+  color: #fff;
+  background: linear-gradient(135deg, #242838 0%, #1a1d29 100%);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.book-strip__title {
+  margin: 0 0 0.4rem;
+  color: #fff;
+  font-family: var(--font-display);
+}
+
+.section {
+  padding: 2rem 0 4.5rem;
+}
+
+.section__title {
+  margin: 0 0 0.5rem;
+  font-size: clamp(1.8rem, 4vw, 3rem);
+  font-family: var(--font-display);
+}
+
+.section__intro {
+  max-width: 720px;
+  margin: 0 0 2rem;
+  color: var(--text-soft);
+}
+
+.services-grid,
+.posts-grid,
+.footer-grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.services-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.posts-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.service-card,
+.article-card,
+.testimonial {
+  padding: 1.5rem;
+  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.service-card:hover,
+.article-card:hover,
+.testimonial:hover,
+.page-panel:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-strong);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-card__icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  margin-bottom: 1rem;
+  border-radius: 14px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+}
+
+.service-card h3,
+.article-card h3 {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+  font-size: 1.35rem;
+  font-family: var(--font-display);
+}
+
+.service-card p,
+.article-card p,
+.testimonial p,
+.meta,
+.page-panel p {
+  color: var(--text-soft);
+}
+
+.split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  align-items: start;
+}
+
+.list-clean {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-clean li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.list-clean--soft li {
+  color: var(--text-soft);
+}
+
+.list-clean--steps li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.list-clean--steps li::before {
+  content: "";
+  position: absolute;
+  top: 1.3rem;
+  left: 0;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 999px;
+  background: var(--accent);
+}
+
+.page-hero {
+  padding: 4rem 0 1.75rem;
+}
+
+.page-panel {
+  padding: 2rem;
+}
+
+.content-wrap {
+  padding-bottom: 4rem;
+}
+
+.entry-content h2,
+.entry-content h3 {
+  margin-top: 2rem;
+  font-family: var(--font-display);
+}
+
+.entry-content ul {
+  padding-left: 1.2rem;
+}
+
+.article-card__meta {
+  margin-bottom: 0.7rem;
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.site-footer {
+  border-top: 1px solid var(--line);
+  background: linear-gradient(180deg, rgba(242, 237, 230, 0.86), rgba(234, 225, 212, 0.92));
+}
+
+.footer-grid {
+  grid-template-columns: 1.3fr 1fr 1fr;
+  padding: 2rem 0;
+}
+
+.footer-grid h3 {
+  margin-top: 0;
+  font-family: var(--font-display);
+}
+
+.copyright {
+  padding: 0 0 2rem;
+  color: var(--text-soft);
+  font-size: 0.95rem;
+}
+
+.screen-reader-text {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+@media (max-width: 900px) {
+  .hero__grid,
+  .split,
+  .services-grid,
+  .posts-grid,
+  .footer-grid,
+  .site-header__inner {
+    grid-template-columns: 1fr;
+    display: grid;
+  }
+
+  .book-strip__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .site-header__inner {
+    justify-items: start;
+  }
+
+  .site-nav ul {
+    gap: 0.8rem;
+  }
+}

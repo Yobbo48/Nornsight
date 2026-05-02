@@ -1,0 +1,6 @@
+{
+  "title": "Réserver",
+  "slug": "reserver",
+  "template": "page",
+  "content": "<!-- wp:group {\"className\":\"edr-home-hero\",\"layout\":{\"type\":\"constrained\"}} --><div class=\"wp-block-group edr-home-hero\"><!-- wp:group {\"align\":\"wide\",\"className\":\"edr-reveal\",\"layout\":{\"type\":\"constrained\"}} --><div class=\"wp-block-group alignwide edr-reveal\"><!-- wp:paragraph {\"className\":\"edr-eyebrow\"} --><p class=\"edr-eyebrow\">Réserver</p><!-- /wp:paragraph --><!-- wp:heading {\"level\":1} --><h1>Réserver une séance à distance</h1><!-- /wp:heading --><!-- wp:paragraph {\"className\":\"edr-home-hero__lead\"} --><p class=\"edr-home-hero__lead\">Toutes les séances se font à distance, par téléphone, visioconférence ou email. Le fait d’être à distance n’enlève rien à la qualité de l’accompagnement — il le rend simplement plus accessible, partout en France.</p><!-- /wp:paragraph --></div><!-- /wp:group --></div><!-- /wp:group --><!-- wp:pattern {\"slug\":\"edr-core/calendly-block\"} /--><!-- wp:pattern {\"slug\":\"edr-core/faq-block\"} /-->"
+}

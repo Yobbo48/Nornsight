@@ -1,0 +1,209 @@
+[
+  {
+    "id": "reframe_fact",
+    "label": "Question factuelle brute",
+    "theme": "situation",
+    "question": "Est-ce que Michael Jackson est mort ?",
+    "runes": [
+      {
+        "nom": "Ansuz",
+        "positionLabel": "Passé",
+        "positionKeywords": ["message", "information", "parole"]
+      },
+      {
+        "nom": "Perthro",
+        "positionLabel": "Présent",
+        "positionKeywords": ["caché", "incertitude", "pièce manquante"]
+      },
+      {
+        "nom": "Isa",
+        "positionLabel": "Futur",
+        "positionKeywords": ["gel", "suspension", "arrêt"]
+      }
+    ]
+  },
+  {
+    "id": "maturation_finance",
+    "label": "Allègement financier en maturation",
+    "theme": "argent",
+    "question": "Est-ce que ma situation financière va commencer à s’alléger d’ici cet été ?",
+    "runes": [
+      {
+        "nom": "Jera",
+        "positionLabel": "Passé",
+        "positionKeywords": ["cycle", "maturation", "progression"]
+      },
+      {
+        "nom": "Berkano",
+        "positionLabel": "Présent",
+        "positionKeywords": ["croissance", "protection", "développement"]
+      },
+      {
+        "nom": "Jera",
+        "positionLabel": "Futur",
+        "positionKeywords": ["cycle", "maturation", "progression"]
+      }
+    ]
+  },
+  {
+    "id": "porteur_demenagement",
+    "label": "Déménagement clairement porteur",
+    "theme": "situation",
+    "question": "Est-ce que mon déménagement va se concrétiser cette année ?",
+    "runes": [
+      {
+        "nom": "Raidho",
+        "positionLabel": "Passé",
+        "positionKeywords": ["chemin", "mise en route", "déplacement"]
+      },
+      {
+        "nom": "Berkano",
+        "positionLabel": "Présent",
+        "positionKeywords": ["croissance", "protection", "développement"]
+      },
+      {
+        "nom": "Dagaz",
+        "positionLabel": "Futur",
+        "positionKeywords": ["éclaircie", "renouveau", "ouverture"]
+      }
+    ]
+  },
+  {
+    "id": "project_revenue",
+    "label": "Projet de revenus réel",
+    "theme": "pro",
+    "question": "Est-ce que Nornsight peut devenir une vraie source de revenus pour moi dans les mois à venir ?",
+    "runes": [
+      {
+        "nom": "Fehu",
+        "positionLabel": "Passé",
+        "positionKeywords": ["ressource", "circulation", "valeur"]
+      },
+      {
+        "nom": "Sowilo",
+        "positionLabel": "Présent",
+        "positionKeywords": ["clarté", "axe", "élan"]
+      },
+      {
+        "nom": "Jera",
+        "positionLabel": "Futur",
+        "positionKeywords": ["maturation", "cycle", "progression"]
+      }
+    ]
+  },
+  {
+    "id": "tendu_finance",
+    "label": "Retour à flot tendu",
+    "theme": "argent",
+    "question": "Vais-je retomber à flot financièrement en juin ?",
+    "runes": [
+      {
+        "nom": "Nauthiz",
+        "positionLabel": "Passé",
+        "positionKeywords": ["manque", "contrainte", "réduction de marge"]
+      },
+      {
+        "nom": "Isa",
+        "positionLabel": "Présent",
+        "positionKeywords": ["gel", "immobilité", "stagnation"]
+      },
+      {
+        "nom": "Perthro",
+        "positionLabel": "Futur",
+        "positionKeywords": ["caché", "aléa", "pièce manquante"]
+      }
+    ]
+  },
+  {
+    "id": "constructive_relation",
+    "label": "Relation constructive avec exigence",
+    "theme": "relations",
+    "question": "Comment va évoluer ma relation ?",
+    "runes": [
+      {
+        "nom": "Fehu",
+        "positionLabel": "Passé",
+        "positionKeywords": ["ressource amorcée", "valeur", "mise en route"]
+      },
+      {
+        "nom": "Sowilo",
+        "positionLabel": "Présent",
+        "positionKeywords": ["clarté", "axe juste", "vitalité"]
+      },
+      {
+        "nom": "Tiwaz",
+        "positionLabel": "Futur",
+        "positionKeywords": ["justesse", "décision", "engagement"]
+      }
+    ]
+  },
+  {
+    "id": "maturation_growth",
+    "label": "Amélioration progressive sans blocage pur",
+    "theme": "situation",
+    "question": "Ma situation va-t-elle s’améliorer ?",
+    "runes": [
+      {
+        "nom": "Jera",
+        "positionLabel": "Passé",
+        "positionKeywords": ["cycle", "maturation", "progression"]
+      },
+      {
+        "nom": "Berkano",
+        "positionLabel": "Présent",
+        "positionKeywords": ["croissance", "développement", "protection"]
+      },
+      {
+        "nom": "Fehu",
+        "positionLabel": "Futur",
+        "positionKeywords": ["valeur", "circulation", "ressource"]
+      }
+    ]
+  },
+  {
+    "id": "relation_opening",
+    "label": "Ouverture relationnelle cohérente",
+    "theme": "relations",
+    "question": "Ce lien peut-il prendre une vraie place ?",
+    "runes": [
+      {
+        "nom": "Gebo",
+        "positionLabel": "Passé",
+        "positionKeywords": ["réciprocité", "équilibre", "accord"]
+      },
+      {
+        "nom": "Wunjo",
+        "positionLabel": "Présent",
+        "positionKeywords": ["accord", "cohésion", "détente"]
+      },
+      {
+        "nom": "Ehwaz",
+        "positionLabel": "Futur",
+        "positionKeywords": ["accord dynamique", "rythme partagé", "ajustement"]
+      }
+    ]
+  },
+  {
+    "id": "clarity_favorable",
+    "label": "Éclaircissement favorable sans noircissement",
+    "theme": "relations",
+    "question": "Est-ce que la situation entre nous peut s’éclaircir ?",
+    "runes": [
+      {
+        "nom": "Ansuz",
+        "positionLabel": "Passé",
+        "positionKeywords": ["message", "compréhension", "confirmation"]
+      },
+      {
+        "nom": "Sowilo",
+        "positionLabel": "Présent",
+        "positionKeywords": ["clarté", "axe juste", "vitalité"]
+      },
+      {
+        "nom": "Wunjo",
+        "positionLabel": "Futur",
+        "positionKeywords": ["accord", "détente", "cohésion"]
+      }
+    ]
+  }
+]

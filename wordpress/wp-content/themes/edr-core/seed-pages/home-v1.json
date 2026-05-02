@@ -1,0 +1,6 @@
+{
+  "title": "Accueil",
+  "slug": "accueil",
+  "template": "front-page",
+  "content": "<!-- wp:pattern {\"slug\":\"edr-core/hero-home\"} /--><!-- wp:pattern {\"slug\":\"edr-core/book-banner\"} /--><!-- wp:pattern {\"slug\":\"edr-core/services-grid\"} /--><!-- wp:pattern {\"slug\":\"edr-core/about-condensed\"} /--><!-- wp:pattern {\"slug\":\"edr-core/testimonials-grid\"} /--><!-- wp:pattern {\"slug\":\"edr-core/newsletter-block\"} /--><!-- wp:pattern {\"slug\":\"edr-core/cta-simple\"} /-->"
+}

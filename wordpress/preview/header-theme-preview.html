@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aperçu Header — L’énergie des Runes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --edr-bg: #faf9f7;
+        --edr-bg-soft: #f3f0eb;
+        --edr-night: #1c1f2e;
+        --edr-copper: #b8864e;
+        --edr-copper-strong: #946233;
+        --edr-text: #352f2a;
+        --edr-text-soft: #6b6259;
+        --edr-line: rgba(115, 92, 70, 0.14);
+        --edr-shadow-sm: 0 12px 28px rgba(60, 45, 30, 0.08);
+        --edr-shadow: 0 24px 60px rgba(60, 45, 30, 0.12);
+        --edr-content: 1240px;
+        --edr-font-display: "Cinzel", serif;
+        --edr-font-body: "Lora", serif;
+        --edr-font-ui: system-ui, sans-serif;
+      }
+
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(circle at 8% 0%, rgba(212, 164, 106, 0.18), transparent 26%),
+          radial-gradient(circle at 88% 8%, rgba(28, 31, 46, 0.08), transparent 20%),
+          linear-gradient(180deg, #fbfaf8 0%, #f6f1ea 100%);
+        color: var(--edr-text);
+        font-family: var(--edr-font-body);
+        line-height: 1.78;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      img {
+        max-width: 100%;
+        display: block;
+      }
+
+      .screen-reader-text {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        margin: -1px;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        white-space: nowrap;
+        border: 0;
+      }
+
+      .edr-container {
+        width: min(calc(100% - 2rem), var(--edr-content));
+        margin: 0 auto;
+      }
+
+      .edr-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 54px;
+        padding: 0.95rem 1.6rem;
+        border: 1px solid transparent;
+        border-radius: 999px;
+        background: linear-gradient(180deg, #d4a46a, var(--edr-copper));
+        color: #fff;
+        font-family: var(--edr-font-ui);
+        font-weight: 700;
+        box-shadow: var(--edr-shadow-sm);
+        transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+      }
+
+      .edr-button:hover {
+        transform: translateY(-2px);
+        background: var(--edr-copper-strong);
+        box-shadow: var(--edr-shadow);
+      }
+
+      .edr-site-header {
+        position: sticky;
+        top: 0;
+        z-index: 30;
+        padding: 22px 0 6px;
+        backdrop-filter: blur(16px);
+        background: linear-gradient(180deg, rgba(250, 249, 247, 0.94), rgba(250, 249, 247, 0.82));
+      }
+
+      .edr-site-header__frame {
+        display: grid;
+        grid-template-columns: minmax(290px, 1.1fr) minmax(420px, 0.95fr) minmax(250px, 0.8fr);
+        align-items: center;
+        gap: 1rem;
+        padding: 18px 24px;
+        border: 1px solid rgba(115, 92, 70, 0.12);
+        border-radius: 32px;
+        background:
+          radial-gradient(circle at 14% 20%, rgba(212, 164, 106, 0.11), transparent 26%),
+          linear-gradient(180deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.72));
+        box-shadow:
+          inset 0 1px 0 rgba(255,255,255,0.82),
+          0 16px 40px rgba(60,45,30,0.08);
+      }
+
+      .edr-brand {
+        display: inline-flex;
+        align-items: center;
+        gap: 1rem;
+        color: var(--edr-night);
+        text-decoration: none;
+      }
+
+      .edr-brand__logo img,
+      .edr-brand__seal {
+        width: 62px;
+        height: 62px;
+        object-fit: contain;
+        padding: 0.45rem;
+        border-radius: 22px;
+        border: 1px solid rgba(184, 134, 78, 0.28);
+        background:
+          radial-gradient(circle at 30% 25%, rgba(212,164,106,0.12), transparent 42%),
+          rgba(255, 255, 255, 0.88);
+        box-shadow:
+          inset 0 1px 0 rgba(255,255,255,0.78),
+          0 12px 28px rgba(60,45,30,0.08);
+      }
+
+      .edr-brand__seal {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--edr-copper);
+        font-family: var(--edr-font-display);
+        font-size: 1.8rem;
+        line-height: 1;
+      }
+
+      .edr-brand__text {
+        display: flex;
+        flex-direction: column;
+        gap: 0.18rem;
+      }
+
+      .edr-brand__name {
+        font-family: var(--edr-font-display);
+        font-size: 1.32rem;
+        font-weight: 700;
+        letter-spacing: -0.02em;
+      }
+
+      .edr-brand__tagline {
+        color: var(--edr-copper);
+        font-family: var(--edr-font-ui);
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .edr-site-nav {
+        justify-self: center;
+        width: 100%;
+      }
+
+      .edr-site-nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.2rem;
+        margin: 0;
+        padding: 0.35rem 0.45rem;
+        list-style: none;
+        border: 1px solid rgba(115, 92, 70, 0.09);
+        border-radius: 999px;
+        background:
+          linear-gradient(180deg, rgba(255,255,255,0.82), rgba(255,255,255,0.62));
+        box-shadow:
+          inset 0 1px 0 rgba(255, 255, 255, 0.82),
+          0 10px 24px rgba(60,45,30,0.04);
+      }
+
+      .edr-site-nav a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        padding: 0.48rem 0.82rem;
+        border-radius: 999px;
+        color: var(--edr-text);
+        font-family: var(--edr-font-ui);
+        font-size: 0.88rem;
+        font-weight: 600;
+        text-decoration: none;
+        transition: transform .18s ease, background-color .18s ease, color .18s ease;
+      }
+
+      .edr-site-nav .current-menu-item a,
+      .edr-site-nav a:hover {
+        background: rgba(255, 255, 255, 0.92);
+        color: var(--edr-copper-strong);
+        transform: translateY(-1px);
+      }
+
+      .edr-site-header__meta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.48rem;
+      }
+
+      .edr-site-header__meta-copy {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 0.2rem;
+      }
+
+      .edr-site-header__meta-top {
+        color: var(--edr-copper);
+        font-family: var(--edr-font-ui);
+        font-size: 0.66rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-transform: uppercase;
+      }
+
+      .edr-site-header__meta-bottom {
+        color: var(--edr-text-soft);
+        font-family: var(--edr-font-ui);
+        font-size: 0.8rem;
+      }
+
+      .edr-site-header__toggle {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        width: 54px;
+        height: 54px;
+        margin-left: auto;
+        padding: 0;
+        border: 1px solid rgba(115, 92, 70, 0.12);
+        border-radius: 18px;
+        background: rgba(255, 255, 255, 0.82);
+        box-shadow: var(--edr-shadow-sm);
+        cursor: pointer;
+      }
+
+      .edr-site-header__toggle-line {
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin: 2px 0;
+        border-radius: 999px;
+        background: var(--edr-night);
+        transition: transform 180ms ease, opacity 180ms ease;
+      }
+
+      .hero {
+        padding: 3.2rem 0 5rem;
+      }
+
+      .hero__grid {
+        display: grid;
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 2rem;
+        align-items: start;
+      }
+
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: .7rem;
+        margin-bottom: 1rem;
+        color: var(--edr-copper);
+        font-family: var(--edr-font-ui);
+        font-size: .74rem;
+        font-weight: 700;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+      }
+
+      .eyebrow::before {
+        content: "";
+        width: 24px;
+        height: 1px;
+        background: currentColor;
+        opacity: .75;
+      }
+
+      h1 {
+        margin: 0 0 1rem;
+        color: var(--edr-night);
+        font-family: var(--edr-font-display);
+        font-size: clamp(3rem, 6vw, 5.4rem);
+        line-height: 1.04;
+      }
+
+      p {
+        margin: 0;
+        color: var(--edr-text-soft);
+        font-size: 1.06rem;
+      }
+
+      .card {
+        padding: 1.85rem;
+        border: 1px solid rgba(115, 92, 70, 0.1);
+        border-radius: 32px;
+        background: rgba(255, 255, 255, 0.78);
+        box-shadow: var(--edr-shadow-sm);
+      }
+
+      .card__title {
+        margin: 0 0 1rem;
+        color: var(--edr-copper);
+        font-family: var(--edr-font-ui);
+        font-size: .8rem;
+        font-weight: 700;
+        letter-spacing: .18em;
+        text-transform: uppercase;
+      }
+
+      .card__copy {
+        font-size: 1rem;
+      }
+
+      @media (max-width: 1024px) {
+        .edr-site-header__frame {
+          grid-template-columns: minmax(240px, 1fr) auto;
+          grid-template-areas:
+            "brand toggle"
+            "nav nav"
+            "meta meta";
+          padding: 18px;
+        }
+
+        .edr-brand { grid-area: brand; }
+        .edr-site-nav { grid-area: nav; justify-self: stretch; }
+        .edr-site-header__meta { grid-area: meta; align-items: flex-start; border-top: 1px solid rgba(115, 92, 70, 0.12); padding-top: 1rem; }
+        .edr-site-header__meta-copy { align-items: flex-start; }
+        .hero__grid { grid-template-columns: 1fr; }
+      }
+
+      @media (max-width: 767px) {
+        .edr-site-header {
+          padding-top: 12px;
+        }
+
+        .edr-site-header__frame {
+          grid-template-columns: 1fr auto;
+          grid-template-areas:
+            "brand toggle"
+            "nav nav"
+            "meta meta";
+          padding: 16px;
+          border-radius: 24px;
+        }
+
+        .edr-site-header__toggle {
+          display: inline-flex;
+        }
+
+        .edr-site-nav {
+          display: none;
+          margin-top: .35rem;
+        }
+
+        .edr-site-header.is-menu-open .edr-site-nav {
+          display: block;
+        }
+
+        .edr-site-nav ul {
+          flex-direction: column;
+          align-items: stretch;
+          gap: .45rem;
+          padding: .8rem;
+          border-radius: 20px;
+        }
+
+        .edr-site-nav a {
+          justify-content: flex-start;
+          min-height: 42px;
+          padding: .75rem .95rem;
+        }
+
+        .edr-site-header__meta {
+          align-items: stretch;
+        }
+
+        .edr-site-header__meta-copy {
+          align-items: flex-start;
+        }
+
+        .edr-site-header .edr-button {
+          width: 100%;
+        }
+
+        .edr-brand__name {
+          font-size: 1.05rem;
+        }
+
+        .edr-brand__tagline {
+          font-size: .62rem;
+          letter-spacing: .12em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="edr-site-header">
+      <div class="edr-container">
+        <div class="edr-site-header__frame">
+          <a class="edr-brand" href="#">
+            <span class="edr-brand__logo">
+              <img src="/Users/kevin/Documents/Kevin/cropped-Depositphotos_522204732_XL.jpg.png" alt="Logo L’énergie des Runes" />
+            </span>
+            <span class="edr-brand__text">
+              <span class="edr-brand__name">L’ÉNERGIE DES RUNES</span>
+              <span class="edr-brand__tagline">Guidances et transmission à distance</span>
+            </span>
+          </a>
+
+          <button class="edr-site-header__toggle" type="button" aria-expanded="false" aria-controls="preview-primary-nav">
+            <span class="edr-site-header__toggle-line"></span>
+            <span class="edr-site-header__toggle-line"></span>
+            <span class="edr-site-header__toggle-line"></span>
+            <span class="screen-reader-text">Ouvrir le menu</span>
+          </button>
+
+          <nav id="preview-primary-nav" class="edr-site-nav" aria-label="Navigation principale">
+            <ul>
+              <li class="current-menu-item"><a href="#">Accueil</a></li>
+              <li><a href="#">À propos</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Formations</a></li>
+              <li><a href="#">Le Livre</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Réserver</a></li>
+            </ul>
+          </nav>
+
+          <div class="edr-site-header__meta">
+            <div class="edr-site-header__meta-copy">
+              <div class="edr-site-header__meta-top">Accessible partout en France</div>
+              <div class="edr-site-header__meta-bottom">Téléphone · Visioconférence · Email</div>
+            </div>
+            <a class="edr-button" href="#">Réserver</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="edr-container hero__grid">
+        <div>
+          <div class="eyebrow">Header codé du thème</div>
+          <h1>Une base plus fiable, plus propre, plus vivable</h1>
+          <p>
+            Ici, le header n’est plus dépendant d’un import Elementor fragile. Le logo, le menu, les infos et le bouton
+            vivent dans le thème et restent pilotables depuis l’admin WordPress.
+          </p>
+        </div>
+        <aside class="card">
+          <div class="card__title">Ce que tu pourras modifier</div>
+          <p class="card__copy">
+            Le logo via l’identité du site, l’ordre du menu via les menus WordPress, et les textes du bloc de droite
+            via le Customizer.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var header = document.querySelector(".edr-site-header");
+        var toggle = document.querySelector(".edr-site-header__toggle");
+        if (!header || !toggle) return;
+        toggle.addEventListener("click", function () {
+          var isOpen = header.classList.toggle("is-menu-open");
+          toggle.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        });
+      });
+    </script>
+  </body>
+  </html>
